@@ -4,23 +4,16 @@
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
   <body style="margin: 0px; overflow: hidden;">
     <a-scene embedded arjs>
-      
-     <a-assets>
+       <a-scene>
+      <a-entity particle-system="preset: snow" position="0 0 -10"></a-entity>
+    </a-scene>     <a-assets>
 	<a-asset-item id="mikan" src="mikan_rotation.glb"></a-asset-item></a-assets>   
 	    <a-marker type="pattern" url="pattern-akemasite.patt">
- <a-entity gltf-model="#mikan" scale="0.003 0.003 0.003" animation-mixer 
+ <a-entity gltf-model="#mikan" scale="0.003 0.003 0.003"　
 	   animation="property: rotation; from: 0 0 0; to: 0 360 0; loop: true; dur: 3000; easing: linear;" >
       </a-entity>
     </a-marker>
     <a-entity camera></a-entity>
   </a-scene>
 </body>
-</html>
-        <!-- a-imageを内包するa-entityをy軸周りで360度回転するアニメーション -->
-      <!-- dur(間隔):4000(ms), repeat(繰り返し):止めない限り無限, easing(イージング):線形(イージングしない)-->
-      <a-animation attribute="rotation" to="0 360 0" dur="4000" repeat="indefinite" easing="linear"></a-animation>
-	 </a-entity> </a-marker>
-      <a-entity camera></a-entity>
-    </a-scene>
-  </body>
 </html>
