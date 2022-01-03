@@ -7,9 +7,11 @@
 <body style="margin: 0px; overflow: hidden;">
 <a-scene embedded arjs>
 <a-assets>
-<a-asset-item id="mikan" src="mikan_rotation.glb"></a-asset-item></a-assets>   
+ <a-asset-item id="mikan-obj" src="mikan_aketa.obj"></a-asset-item>
+      <a-asset-item id="mikan-mtl" src="mikan_aketa.mtl"></a-asset-item> 
+</a-assets>   
 <a-marker type="pattern" url="pattern-akemasite.patt">
- <a-entity gltf-model="#mikan" scale="0.003 0.003 0.003"　
+ <a-entity obj-model="obj: #mikan-obj; mtl: #mikan-mtl" scale="0.003 0.003 0.003"　
 	   animation="property: rotation; from: 0 0 0; to: 0 360 0; loop: true; dur: 5000; easing: linear;" >
       </a-entity>
     </a-marker>
