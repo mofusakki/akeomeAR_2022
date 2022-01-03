@@ -58,7 +58,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd /var/folders/lb/z2ck79j14832dvn9zwfqv3zm0000gn/T/gltfimg-cb5jfk8x/2022.png
+map_Kd 2022.png
 
 newmtl マテリアル.005
 Ns 0.000000
@@ -69,4 +69,4 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.450000
 d 1.000000
 illum 2
-map_Kd /var/folders/lb/z2ck79j14832dvn9zwfqv3zm0000gn/T/gltfimg-4s4uyrhj/kagamimochi.png
+map_Kd kagamimochi.png
